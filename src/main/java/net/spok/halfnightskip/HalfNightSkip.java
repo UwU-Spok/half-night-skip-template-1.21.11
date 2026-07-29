@@ -1,6 +1,7 @@
 package net.spok.halfnightskip;
 
 import net.fabricmc.api.ModInitializer;
+import net.spok.halfnightskip.config.ModConfigs;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -15,20 +16,11 @@ public class HalfNightSkip implements ModInitializer {
 
 
 
-	public boolean insomnia = false;		//spawn des fantomes pour les batman
-	public static double percentage = 0.5;			//la proportion de dormeurs necessaires pour skip la nuit
-	public static boolean floor = true;		//arrondi a l'exces ou pas
-	public static int plus = 1;				//value to add to the number of player needed to sleep 
-
-
-
-
 	@Override
 	public void onInitialize() {
-		LOGGER.info("Hello Fabric world!");
+		LOGGER.info("Half night skip is initializing...");
 
-
-
+		ModConfigs.registerConfigs();
 
 	}
 
