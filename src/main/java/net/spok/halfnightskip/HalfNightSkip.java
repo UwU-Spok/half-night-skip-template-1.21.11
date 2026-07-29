@@ -15,6 +15,13 @@ public class HalfNightSkip implements ModInitializer {
 
 
 
+	public boolean insomnia = false;		//spawn des fantomes pour les batman
+	public static double percentage = 0.5;			//la proportion de dormeurs necessaires pour skip la nuit
+	public static boolean floor = true;		//arrondi a l'exces ou pas
+	public static int plus = 1;				//value to add to the number of player needed to sleep 
+
+
+
 
 	@Override
 	public void onInitialize() {
